@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #d9e7ff);
+}
+
+h1 {
+    color: #ff4081;
+    font-size: 45px;
+}
+
+p {
+    font-size: 20px;
+    color: #444;
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4081;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e91e63;
+}
+
+.surprise {
+    text-align: center;
+    padding: 40px;
+    max-width: 600px;
+}
+
+.surprise h1 {
+    font-size: 50px;
+    color: #ff4081;
+}
+
+.surprise h2 {
+    font-size: 32px;
+    color: #e91e63;
+}
+
+.surprise p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+.surprise img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.surprise img:hover {
+    transform: scale(1.05);
+}
+
+.surprise img:hover {
+    box-shadow: 0 0 35px rgba(255, 64, 129, 0.8);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.surprise {
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
+
+.signature {
+    margin-top: 25px;
+    font-size: 18px;
+    font-style: italic;
+    color: #e91e63;
+}
+
+button {
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+.surprise img {
+    border: 5px solid white;
+    box-shadow: 0 0 25px rgba(255, 64, 129, 0.6);
+    animation: photoGlow 2s infinite alternate;
+}
+
+@keyframes photoGlow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.03);
+    }
+}
+
+.content {
+    text-align: center;
+    width: 100%;
+}
+
+.birthday-message {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e91e63;
+    margin: 20px auto;
+}
+
+.birthday-message {
+    text-shadow: 0 2px 8px rgba(255, 64, 129, 0.3);
+}
+
+button {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+body {
+    background: linear-gradient(135deg, #ffd6e8, #d9e7ff, #ffe4f0);
+    background-size: 300% 300%;
+    animation: backgroundMove 8s ease infinite;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    text-shadow: 0 0 15px rgba(255, 64, 129, 0.5);
+    animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.03);
+    }
+}
+
+button {
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(255, 64, 129, 0.35);
+}
+
+.surprise h1 {
+    animation: birthdayTitle 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes birthdayTitle {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.06);
+    }
+}
+
+.birthday-message {
+    animation: messageGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes messageGlow {
+    from {
+        opacity: 0.7;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button:hover {
+    box-shadow: 0 0 25px rgba(255, 64, 129, 0.7);
+}
+
+.surprise p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.signature {
+    animation: signatureGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes signatureGlow {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.surprise {
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+}
+
+
+@media (max-width: 600px) {
+    .surprise {
+        padding: 25px 15px;
+        width: 90%;
+    }
+
+    .surprise h1 {
+        font-size: 35px;
+    }
+
+    .surprise h2 {
+        font-size: 25px;
+    }
+
+    .surprise img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button {
+    background: linear-gradient(135deg, #ff4081, #e91e63);
+}
+
+button {
+    letter-spacing: 0.5px;
+}
+
+.surprise img {
+    border-radius: 30px;
+}
+
+.surprise {
+    border: 2px solid rgba(255, 64, 129, 0.25);
+}
+
+.surprise audio {
+    margin-bottom: 20px;
+    width: 280px;
+}
+
+.surprise img {
+    transition: all 0.4s ease;
+}
+
+.surprise p {
+    letter-spacing: 0.3px;
+}
+
+.surprise p {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+@keyframes confettiFall {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
